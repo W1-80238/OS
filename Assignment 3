@@ -1,0 +1,125 @@
+1)	sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace$ ls -a
+ 	.                       DBT    DSA         .first.txt.swn   JAVA        name.txt        out.txt      Shell_scripting   shell.txt
+	 ..                      Demo   err.txt     .first.txt.swo   lserr.txt   .name.txt.swp   repeat.txt   shell.sh          test.txt
+	'Assignment workspace'   dir1   first.txt   .first.txt.swp   name.sh     one             select.txt   .shell.sh.swp
+
+
+
+2)	sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace/one/two/three$ rename 's/\.txt$/\.htm/' *.txt
+	sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace/one/two/three$ ls
+	333.htm  33.htm  3.htm  four
+	
+3)	sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace/one/two/three$ ln -s /home/sunbeam/OS_workspace/one/two/three /home/sunbeam/OS_workspace
+
+4)	sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace$ ln  /home/sunbeam/OS_workspace/one/two/ /home/sunbeam/OS_workspace
+
+5)	sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace/one/two$ stat 2.txt
+	  File: 2.txt
+	  Size: 0         	Blocks: 0          IO Block: 4096   regular empty file
+	Device: 804h/2052d	Inode: 7520397     Links: 1
+	Access: (0664/-rw-rw-r--)  Uid: ( 1000/ sunbeam)   Gid: ( 1000/ sunbeam)
+	Access: 2023-12-29 14:03:23.948824821 +0530
+	Modify: 2023-12-29 14:03:23.948824821 +0530
+	Change: 2023-12-29 14:03:23.948824821 +0530
+	 Birth: 2023-12-29 14:03:23.948824821 +0530
+	 
+	 
+6)	sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace/one/two$ touch -t 202309090909.09 2.txt
+	sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace/one/two$ stat 2.txt
+	  File: 2.txt
+	  Size: 0         	Blocks: 0          IO Block: 4096   regular empty file
+	Device: 804h/2052d	Inode: 7520397     Links: 1
+	Access: (0664/-rw-rw-r--)  Uid: ( 1000/ sunbeam)   Gid: ( 1000/ sunbeam)
+	Access: 2023-09-09 09:09:09.000000000 +0530
+	Modify: 2023-09-09 09:09:09.000000000 +0530
+	Change: 2023-12-30 08:38:59.322910830 +0530
+	 Birth: 2023-12-29 14:03:23.948824821 +0530
+	 
+7)	sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace/one/two$ touch 222.txt
+	sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace/one/two$ ls
+	222.txt  22.txt  2.txt  three
+	
+8)	sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace/one/two$ tail -n +5 2.txt
+
+9)	sudo init 0
+
+10)	sudo init 6
+
+12)	sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace$ whoami
+	sunbeam
+	
+13)	sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace$ tty
+	/dev/pts/0
+	
+	
+14)	sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace$ who am i
+	
+	
+15)	sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace$ users
+	sunbeam
+	
+16)	sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace$ who
+	sunbeam  :1           2023-12-30 08:54 (:1)
+	
+17)	sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace$ grep
+	Usage: grep [OPTION]... PATTERNS [FILE]...
+	Try 'grep --help' for more information.
+	
+18)	sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace$ egrep
+	Usage: grep [OPTION]... PATTERNS [FILE]...
+	Try 'grep --help' for more information.
+	
+19)	sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace$ fgrep
+	Usage: grep [OPTION]... PATTERNS [FILE]...
+	Try 'grep --help' for more information.
+	
+20)	sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace/one/two$ chmod a-w 22.txt 
+
+21)	sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace/one/two$ chmod u+rwx 22.txt
+
+22)	sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace/one/two$ wc -w 22.txt 2.txt
+	 5 22.txt
+	 0 2.txt
+	 5 total
+	 
+23)	sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace/one/two$ who | wc -w
+	5
+	
+24)	sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace/one/two$ head -n 10 22.txt | tail -n +5
+
+25)	sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace/one/two$ sort 22.txt | uniq
+	from sunbeam
+	Hello All users
+	
+26)	sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace/one/two$ who | grep -v -E 'tty2|tty3|tty4'
+	sunbeam  :1           2023-12-30 08:54 (:1)
+	
+27)	sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace/one/two$ ls -l --sort=size
+	total 8
+	drwxrwxr-x 3 sunbeam sunbeam 4096 Dec 30 08:29 three
+	-rwxr--r-- 1 sunbeam sunbeam   29 Dec 30 09:13 22.txt
+	-rw-rw-r-- 1 sunbeam sunbeam    0 Dec 30 08:40 222.txt
+	-r--r--r-- 1 sunbeam sunbeam    0 Sep  9 09:09 2.txt
+	
+28)	sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace/one/two$ ls -l | grep -E '^d|^-' | wc -l
+	4
+	
+29)	sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace/one/two$ ls -a | grep '^\.'
+	.
+	..
+30)	sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace/one/two$ echo "Hello All users from sunbeam" | tr '[:lower:]' '[:upper:]'
+	HELLO ALL USERS FROM SUNBEAM
+
+
+
+
+
+
+
+	
+
+
+
+
+
+

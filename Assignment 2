@@ -1,0 +1,175 @@
+ ls -lt
+ ls -ls
+ ls -li
+ ls -R
+ echo "Pritam Bopalkar" > mytitle.txt
+ cat mytitle.txt
+ touch -t 202301011234.56 first.txt
+ ls /home/sunbeam/OS_workspace/one/two/three/four/five
+ 
+ 1. 	sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace$ ls -lt
+total 60
+drwxrwxr-x 2 sunbeam sunbeam 4096 Dec 28 14:48  Shell_scripting
+drwxrwxr-x 3 sunbeam sunbeam 4096 Dec 27 17:18 'Assignment workspace'
+-rwxrwxr-x 1 sunbeam sunbeam   27 Dec 27 14:33  shell.sh
+-rw-rw-r-- 1 sunbeam sunbeam    0 Dec 27 14:32  shell.txt
+-rw-rw-r-- 1 sunbeam sunbeam   36 Dec 27 14:13  first.txt
+-rw-rw-r-- 1 sunbeam sunbeam   37 Dec 26 15:18  repeat.txt
+-rw-rw-r-- 1 sunbeam sunbeam   19 Dec 26 15:09  select.txt
+-rw-rw-r-- 1 sunbeam sunbeam   54 Dec 26 15:00  test.txt
+-rw-rw-r-- 1 sunbeam sunbeam    0 Dec 26 14:41  err.txt
+-rw-rw-r-- 1 sunbeam sunbeam    6 Dec 26 14:41  out.txt
+-rw-rw-r-- 1 sunbeam sunbeam    5 Dec 26 14:38  name.txt
+-rw-rw-r-- 1 sunbeam sunbeam   64 Dec 26 14:38  lserr.txt
+drwxrwxr-x 4 sunbeam sunbeam 4096 Dec 25 17:54  Demo
+drwxrwxr-x 3 sunbeam sunbeam 4096 Dec 25 15:02  dir1
+drwxrwxr-x 2 sunbeam sunbeam 4096 Dec 25 15:00  DBT
+drwxrwxr-x 2 sunbeam sunbeam 4096 Dec 25 15:00  DSA
+drwxrwxr-x 2 sunbeam sunbeam 4096 Dec 25 15:00  JAVA
+
+2.	sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace$ ls -ls
+total 60
+4 drwxrwxr-x 3 sunbeam sunbeam 4096 Dec 27 17:18 'Assignment workspace'
+4 drwxrwxr-x 2 sunbeam sunbeam 4096 Dec 25 15:00  DBT
+4 drwxrwxr-x 4 sunbeam sunbeam 4096 Dec 25 17:54  Demo
+4 drwxrwxr-x 3 sunbeam sunbeam 4096 Dec 25 15:02  dir1
+4 drwxrwxr-x 2 sunbeam sunbeam 4096 Dec 25 15:00  DSA
+0 -rw-rw-r-- 1 sunbeam sunbeam    0 Dec 26 14:41  err.txt
+4 -rw-rw-r-- 1 sunbeam sunbeam   36 Dec 27 14:13  first.txt
+4 drwxrwxr-x 2 sunbeam sunbeam 4096 Dec 25 15:00  JAVA
+4 -rw-rw-r-- 1 sunbeam sunbeam   64 Dec 26 14:38  lserr.txt
+4 -rw-rw-r-- 1 sunbeam sunbeam    5 Dec 26 14:38  name.txt
+4 -rw-rw-r-- 1 sunbeam sunbeam    6 Dec 26 14:41  out.txt
+4 -rw-rw-r-- 1 sunbeam sunbeam   37 Dec 26 15:18  repeat.txt
+4 -rw-rw-r-- 1 sunbeam sunbeam   19 Dec 26 15:09  select.txt
+4 drwxrwxr-x 2 sunbeam sunbeam 4096 Dec 28 14:48  Shell_scripting
+4 -rwxrwxr-x 1 sunbeam sunbeam   27 Dec 27 14:33  shell.sh
+0 -rw-rw-r-- 1 sunbeam sunbeam    0 Dec 27 14:32  shell.txt
+4 -rw-rw-r-- 1 sunbeam sunbeam   54 Dec 26 15:00  test.txt
+
+3.	sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace$ ls -li
+total 60
+7517123 drwxrwxr-x 3 sunbeam sunbeam 4096 Dec 27 17:18 'Assignment workspace'
+7358152 drwxrwxr-x 2 sunbeam sunbeam 4096 Dec 25 15:00  DBT
+7358146 drwxrwxr-x 4 sunbeam sunbeam 4096 Dec 25 17:54  Demo
+7358155 drwxrwxr-x 3 sunbeam sunbeam 4096 Dec 25 15:02  dir1
+7358149 drwxrwxr-x 2 sunbeam sunbeam 4096 Dec 25 15:00  DSA
+7390087 -rw-rw-r-- 1 sunbeam sunbeam    0 Dec 26 14:41  err.txt
+7357967 -rw-rw-r-- 1 sunbeam sunbeam   36 Dec 27 14:13  first.txt
+7358153 drwxrwxr-x 2 sunbeam sunbeam 4096 Dec 25 15:00  JAVA
+7390082 -rw-rw-r-- 1 sunbeam sunbeam   64 Dec 26 14:38  lserr.txt
+7390085 -rw-rw-r-- 1 sunbeam sunbeam    5 Dec 26 14:38  name.txt
+7390086 -rw-rw-r-- 1 sunbeam sunbeam    6 Dec 26 14:41  out.txt
+7390090 -rw-rw-r-- 1 sunbeam sunbeam   37 Dec 26 15:18  repeat.txt
+7390089 -rw-rw-r-- 1 sunbeam sunbeam   19 Dec 26 15:09  select.txt
+7358147 drwxrwxr-x 2 sunbeam sunbeam 4096 Dec 28 14:48  Shell_scripting
+7378538 -rwxrwxr-x 1 sunbeam sunbeam   27 Dec 27 14:33  shell.sh
+7358105 -rw-rw-r-- 1 sunbeam sunbeam    0 Dec 27 14:32  shell.txt
+7390088 -rw-rw-r-- 1 sunbeam sunbeam   54 Dec 26 15:00  test.txt
+
+
+4.	sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace$ ls -R
+.:
+'Assignment workspace'   Demo   DSA       first.txt   lserr.txt   out.txt      select.txt        shell.sh    test.txt
+ DBT                     dir1   err.txt   JAVA        name.txt    repeat.txt   Shell_scripting   shell.txt
+
+'./Assignment workspace':
+Operating-System
+
+'./Assignment workspace/Operating-System':
+'Assignment 2'   README.md   Test
+
+'./Assignment workspace/Operating-System/Test':
+'Untitled Document 1'
+
+./DBT:
+
+./Demo:
+copy  os
+
+./Demo/copy:
+course.txt
+
+./Demo/os:
+course.txt
+
+./dir1:
+dir2
+
+./dir1/dir2:
+dir3
+
+./dir1/dir2/dir3:
+dir4
+
+./dir1/dir2/dir3/dir4:
+
+./DSA:
+
+./JAVA:
+
+./Shell_scripting:
+circleArea.shell  conditional.sh  first.txt    script07.sh  script09.sh  script11.sh  shell.sh
+ClassWork         first.shell     script01.sh  script08.sh  script10.sh  shell04.sh
+
+5.	echo "Pritam Bopalkar" > mytitle.txt
+	sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace/Assignment workspace/Operating-System$ cat mytitle.txt
+	Pritam Bopalkar
+	Pune
+
+6.	touch -t 202301011234.56 first.txt
+
+7.	sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace$ mkdir one
+	sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace$ cd one
+	sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace/one$ touch 1.txt 11.txt 111.txt
+	sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace/one$ mkdir two
+	sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace/one$ touch 2.txt 22.txt 222.txt
+	sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace/one$ cd two
+	sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace/one/two$ touch 2.txt 22.txt 222.txt
+	sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace/one/two$ mkdir three
+	sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace/one/two$ cd three
+	sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace/one/two/three$ touch 3.txt 33.txt 333.txt
+	sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace/one/two/three$ mkdir four
+	sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace/one/two/three$ cd four
+	sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace/one/two/three/four$ touch 4.txt 44.txt 444.txt
+	sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace/one/two/three/four$ mkdir five
+	sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace/one/two/three/four$ cd five 
+	sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace/one/two/three/four/five$ touch 5.txt 55.txt 555.txt
+	sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace/one/two/three/four/five$ cd~
+	
+8. 	 i)     sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~$ ls /home/sunbeam/OS_workspace/one/two/three/four/five
+		555.txt  55.txt  5.txt
+	2)     sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~$ cd /home/sunbeam/OS_workspace/one/two/three/four
+		sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace/one/two/three/four$ ls
+		444.txt  44.txt  4.txt  five
+		sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace/one/two/three/four$ cat > 44.txt
+		Pritam Bopalkar
+	3) 	rm 555.txt
+	4)	cd /home/sunbeam/OS_workspace/one/two/three/four/five/
+	5)	cd /home/sunbeam/OS_workspace/one/two/three/four/five/
+		cat > 3.txt
+		DMC
+		cat 3.txt
+	6)	sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace/one/two$ cd /home/sunbeam/OS_workspace/one
+		sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace/one$ ls
+		111.txt  11.txt  1.txt  two
+		sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace/one$ cd two
+		sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace/one/two$ ls
+		222.txt  22.txt  2.txt  three
+	7)	sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace/one/two/three/four/five$ cd five
+		sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace/one/two/three/four$ rm /one/two/222.txt
+	8)	sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace/one/two/three/four$ cd /home/sunbeam/OS_woekspace/one
+	9)	rm five
+
+9.	sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace/one/two/three$ touch -t 202309090909.09 3.txt
+	sunbeam@sunbeam-HP-Laptop-15s-dr1xxx:~/OS_workspace/one/two/three$ ls
+
+
+
+	
+
+
+
+
+
+

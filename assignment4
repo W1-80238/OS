@@ -1,0 +1,75 @@
+sunbeam@sunbeam-HP-Laptop-15-da1xxx:~$ vim data.txt
+sunbeam@sunbeam-HP-Laptop-15-da1xxx:~$ chmod +x data.txt
+sunbeam@sunbeam-HP-Laptop-15-da1xxx:~$ bash data.txt
+Linux is open source.
+In Linux everything is file.
+files have permissions.
+files have inode no.
+files have size.
+there are several types of files.
+
+Q1.)
+sunbeam@sunbeam-HP-Laptop-15-da1xxx:~$ wc data.txt
+  6  31 189 data.txt
+
+Q2.)
+sunbeam@sunbeam-HP-Laptop-15-da1xxx:~$ grep "files" data.txt
+echo "files have permissions."
+echo "files have inode no."
+echo "files have size."
+echo "there are several types of files."
+
+
+Q3.)sunbeam@sunbeam-HP-Laptop-15-da1xxx:~$ grep "file" data.txt
+echo "In Linux everything is file."
+echo "files have permissions."
+echo "files have inode no."
+echo "files have size."
+echo "there are several types of files."
+
+Q4.)sunbeam@sunbeam-HP-Laptop-15-da1xxx:~$ grep -v "files" data.txt
+echo "Linux is open source."
+echo "In Linux everything is file."
+
+Q5.)sunbeam@sunbeam-HP-Laptop-15-da1xxx:~$ grep "have" data.txt
+echo "files have permissions."
+echo "files have inode no."
+echo "files have size."
+
+Q6.)sunbeam@sunbeam-HP-Laptop-15-da1xxx:~$ grep "^have" data.txt
+files have permissions.
+files have inode no.
+files have size.
+
+Q7.)sunbeam@sunbeam-HP-Laptop-15-da1xxx:~$ grep "^f" data.txt
+files have permissions."
+files have inode no."
+files have size."
+sunbeam@sunbeam-HP-Laptop-15-da1xxx:~$ bash data.sh
+files have permissions."
+files have inode no."
+files have size."
+sunbeam@sunbeam-HP
+
+Q8.)
+sunbeam@sunbeam-HP-Laptop-15-da1xxx:~$ bash data.sh
+Linux is open source.
+In Linux everything is file.
+there are several types of files.
+sunbeam@sunbeam-HP-Laptop-15-da1xxx:~$ grep "\.$" data.txt
+Linux is open source.
+In Linux everything is file.
+there are several types of files.
+
+Q9.)
+sunbeam@sunbeam-HP-Laptop-15-da1xxx:~$ head -n 2 data.txt
+Linux is open source.
+In Linux everything is file.
+
+Q10.)
+sunbeam@sunbeam-HP-Laptop-15-da1xxx:~$ { head -n 5 data.txt | tail -n 3; }
+files have permissions."
+files have inode no."
+files have size."
+
+
